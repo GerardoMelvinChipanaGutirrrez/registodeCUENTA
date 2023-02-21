@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label{
+    color: white;
+}
+.containerGestion{
+    display: flex;
+}
+.banner{
+    padding: 240px 90px;
+}
+.registroContainer{
+    background-color: #e6242e;
+    width: 100%;
+}
+.return{
+    margin: 20px;
+}
+.formuarioRegistro{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 5% auto;
+}
+.tipoCuenta{
+    display: flex;
+    justify-content: flex-start;
+    width: 450px;
+}
+.tipoCuenta label{
+    margin: 20px 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.tipoCuenta label input{
+    margin: 0px 10px;
+}
+.docIdentidadContainer{
+    width: 450px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+}
+.docIdentidadContainer select{
+    width: 18%;
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+    padding: 8px;
+    font-size: 18px;
+    border: solid 1px white;
+}
+.docIdentidadContainer input{
+    width: 80%;
+    margin: 15px 0px;
+    border-radius: 0px 10px 10px 0px;
+    height: 34px;
+    padding: 7px;
+    font-size: 18px;
+    border-left: 0px;
+    border: solid 1px white;
+}
+
+.ingresoNroCard,.ingresoPasswordNet input{
+    width: 96%;
+    margin: 15px auto;
+    border-radius: 10px;
+    height: 34px;
+    padding: 7px;
+    font-size: 18px;
+    border-left: 0px;
+    border: solid 1px white;
+}
+.nCardContainer label{
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.nCardContainer label input{
+    margin: 0px 10px;
+}
+
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>MAZE WEAVER BANK</title>
+</head>
+<body>
+    <div class="containerGestion">
+        <!-- Banner -->
+        <div class="banner">
+            <img src="imagenes/MazeBankLogo (1).png" crossorigin="mazeweaver;gtav">
+        </div>
+        <!-- registroContainer -->
+        <div class="registroContainer">
+            <div class="return">
+                <a href="#">Volver</a>
+            </div>
+
+            <!-- formulario -->
+            <form class="formuarioRegistro" method="metodo" action="ubicacion">
+                <h1 style="margin: 15px auto;color: white;">BANCA POR INTERNET</h1>
+
+                <!-- tipo_de_cuenta -->
+                <div class="tipoCuenta">
+                    <label for=""><input type="radio">Personal</label>
+                    <label for=""><input type="radio">Empresa</label>
+                </div>
+
+                <!-- documento_de_identidad -->
+                <div class="docIdentidadContainer">
+                    <select name="tipDocIdentidad" id="tipDocIdentidad">
+                        <option value="DNI">DNI</option>
+                        <option value="CE">CE</option>
+                        <option value="PAS">PAS</option>
+                    </select>
+                    <input type="number" id="docIdentidad" name="docIdentidad" placeholder="Nro de documento" required>
+                </div>
+                
+                <!-- numero_de_tarjeta -->
+                <div class="nCardContainer">
+                    <div>
+                        <input class="ingresoNroCard" type="number" required>
+                        <!-- <p>Número de tarjeta</p> -->
+                    </div>
+                    <label for=""><input type="checkbox">Recordar datos</label>
+                </div>
+
+                <!-- clave_de_internet -->
+                <div class="passwordNet">
+                    <div class="ingresoPasswordNet">
+                        <input type="number" required>
+                        <!-- <p>Clave de Internet de 6 dígitos</p> -->
+                    </div>
+                    <div>
+                        <a href="#">No tengo Clave</a>
+                        <a href="#">Olvidé mi clave</a>
+                    </div>
+                </div>
+                <!-- recapcha -->
+                <div>
+                    <div>
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <input type="button" value="Cambiar código">
+                </div>
+                <!-- envio -->
+                <button>Continuar</button>
+            </form>
+
+            <p>Derechos recervados GerardoChipana</p>
+
+        </div>
+    </div>
+</body>
+</html>

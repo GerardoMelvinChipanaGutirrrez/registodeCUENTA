@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.containerGestion{
+    display: flex;
+}
+.banner{
+    padding: 240px 90px;
+}
+.registroContainer{
+    background-color: #e6242e;
+    width: 100%;
+}
+.return{
+    margin: 25px;
+}
+.formuarioRegistro{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin: 20% auto;
+}
+.tipoCuenta{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 70px;
+}
+.tipoCuenta label input{
+    color: orange;
+}

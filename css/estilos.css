@@ -4,14 +4,14 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 label{
-    color: white;
+    color: #e6242e;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: #e6242e;
 }
 input,select{
-    border: solid 1px white;
+    border: solid 1px #e6242e;
     height: 34px;
     padding: 7px;
     font-size: 18px;
@@ -34,8 +34,12 @@ input,select{
     flex-direction: column;
     align-content: space-around;
     flex-wrap: wrap;
-    margin: 5% auto;
+    margin: 10% auto;
+    background-color: white;
+    width: 65%;
+    border-radius: 10px;
 }
+
 .tipoCuenta{
     display: flex;
     justify-content: flex-start;
@@ -51,6 +55,7 @@ input,select{
 .tipoCuenta label input{
     margin: 0px 10px;
 }
+
 .docIdentidadContainer{
     width: 450px;
     margin: 15px auto;
@@ -71,14 +76,12 @@ input,select{
     height: 34px;
     padding: 7px;
     font-size: 18px;
-    border-left: solid 1px black;
 }
 
 .ingresoNroCard,.ingresoPasswordNet input{
     width: 96%;
     margin: 15px auto;
     border-radius: 10px;
-    border-left: 0px;
 }
 .nCardContainer label{
     margin: 0px auto 15px auto;
@@ -94,22 +97,44 @@ input,select{
     display: flex;
     justify-content: space-between
 }
+
 .validador{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .generadorNro{
-    width: 27%;
+    width: 30%;
     margin: 15px 0px;
     border-radius: 10px 0px 0px 10px;
-    border-left: 0px;
+    margin-bottom: 0px;
 }
 .validadorNro{
     width: 55%;
     margin: 15px 0px ;
     border-radius: 0px 10px 10px 0px;
-    border-left: solid 1px black;
+    margin-bottom: 0px;
+}
+.refreshGeneradorNro{
+    margin-left: 21px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 32%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.confirmBotón{
+    display: flex;
+}
+.confirmBotón button{
+    width: 65%;
+    margin: 35px auto;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #e6242e;
+    color: white;
+    border: 0px;
+    font-size: 18px;
 }
 
 input[type=number]::-webkit-outer-spin-button,

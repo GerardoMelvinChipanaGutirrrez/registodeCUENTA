@@ -6,6 +6,16 @@
 label{
     color: white;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+input,select{
+    border: solid 1px white;
+    height: 34px;
+    padding: 7px;
+    font-size: 18px;
+}
 .containerGestion{
     display: flex;
 }
@@ -53,7 +63,6 @@ label{
     height: 50px;
     padding: 8px;
     font-size: 18px;
-    border: solid 1px white;
 }
 .docIdentidadContainer input{
     width: 80%;
@@ -62,28 +71,45 @@ label{
     height: 34px;
     padding: 7px;
     font-size: 18px;
-    border-left: 0px;
-    border: solid 1px white;
+    border-left: solid 1px black;
 }
 
 .ingresoNroCard,.ingresoPasswordNet input{
     width: 96%;
     margin: 15px auto;
     border-radius: 10px;
-    height: 34px;
-    padding: 7px;
-    font-size: 18px;
     border-left: 0px;
-    border: solid 1px white;
 }
 .nCardContainer label{
-    margin: 10px;
+    margin: 0px auto 15px auto;
     font-size: 20px;
     display: flex;
     align-items: center;
 }
 .nCardContainer label input{
     margin: 0px 10px;
+}
+.consultarClaveNet{
+    margin: 0px auto 15px auto;
+    display: flex;
+    justify-content: space-between
+}
+.validador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.generadorNro{
+    width: 27%;
+    margin: 15px 0px;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+}
+.validadorNro{
+    width: 55%;
+    margin: 15px 0px ;
+    border-radius: 0px 10px 10px 0px;
+    border-left: solid 1px black;
 }
 
 input[type=number]::-webkit-outer-spin-button,

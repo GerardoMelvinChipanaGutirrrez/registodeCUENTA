@@ -3,19 +3,25 @@
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-label{
+label,option,select{
     color: #e6242e;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
     color: #e6242e;
 }
 input,select{
-    border: solid 1px #e6242e;
+    border: solid 1px #e6242e87;
     height: 34px;
     padding: 7px;
     font-size: 18px;
 }
+input:focus,select:focus{
+    border: solid 2px #e6242e;
+    outline: none;
+}
+
 .containerGestion{
     display: flex;
 }
@@ -38,6 +44,7 @@ input,select{
     background-color: white;
     width: 65%;
     border-radius: 10px;
+    box-shadow:  2px 20px 20px #8b161cfa
 }
 
 .tipoCuenta{
@@ -45,14 +52,15 @@ input,select{
     justify-content: flex-start;
     width: 450px;
 }
-.tipoCuenta label{
-    margin: 20px 15px;
-    margin-top: 20px;
-    font-size: 20px;
+.alineacionEtiquetas{
     display: flex;
     align-items: center;
 }
-.tipoCuenta label input{
+.tipoCuenta div label{
+    margin: 20px 35px 20px 0px;
+    font-size: 20px;
+}
+.tipoCuenta div input{
     margin: 0px 10px;
 }
 
@@ -120,7 +128,9 @@ input,select{
     margin-bottom: 15px;
     margin-top: 5px;
     width: 32%;
-    border-radius: 10px 10px 10px 10px;
+    color: #e6242e;
+    border: 0px;
+    background: none;
 }
 
 .confirmBotón{
@@ -135,6 +145,24 @@ input,select{
     color: white;
     border: 0px;
     font-size: 18px;
+}
+
+.titleInput{
+    position: absolute;
+    background: white;
+    padding: 2px ;
+}
+
+a:hover{
+    text-decoration: underline 4px #e6242e;
+}
+input[type=button]:hover{
+    border-bottom: solid 4px #e6242e;
+    cursor: pointer;
+}
+.confirmBotón button:hover{
+    background-color: #e64124ec;
+    cursor: pointer;
 }
 
 input[type=number]::-webkit-outer-spin-button,

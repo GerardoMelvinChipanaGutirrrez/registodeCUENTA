@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="website icon" href="imagenes/MWLogo.png">
     <title>MAZE BANK</title>
 </head>
 <body>
@@ -25,8 +26,14 @@
 
                 <!-- tipo_de_cuenta -->
                 <div class="tipoCuenta">
-                    <label for=""><input type="radio">Personal</label>
-                    <label for=""><input type="radio">Empresa</label>
+                    <div class="alineacionEtiquetas">
+                        <input type="radio" id="personal" name="tipoCuenta">
+                        <label for="personal">Personal</label>
+                    </div>
+                    <div class="alineacionEtiquetas">
+                        <input type="radio" id="empresa" name="tipoCuenta">
+                        <label for="empresa">Empresa</label>
+                    </div>
                 </div>
 
                 <!-- documento_de_identidad -->
@@ -42,28 +49,32 @@
                 
                 <!-- numero_de_tarjeta -->
                 <div class="nCardContainer">
-                    <div>
+                    <div style="position: relative;">
                         <input class="ingresoNroCard" type="number" required>
-                        <!-- <p>Número de tarjeta</p> -->
+                        <label class="titleInput" style="left: 1rem;top: 0.2rem;">Número de tarjeta</label>
                     </div>
-                    <label for=""><input type="checkbox">Recordar datos</label>
+                    <div class="alineacionEtiquetas">
+                        <input style="margin: 5px 5px 15px 15px;" type="checkbox" id="recordarDatos">
+                        <label style="margin: 5px 20px 15px 0px;" class="recordarDatosLabel" for="recordarDatos">Recordar datos</label>
+                    </div>
                 </div>
 
                 <!-- clave_de_internet -->
                 <div class="passwordNet">
-                    <div class="ingresoPasswordNet">
+                    <div class="ingresoPasswordNet" style="position: relative;">
                         <input type="number" required>
-                        <!-- <p>Clave de Internet de 6 dígitos</p> -->
+                        <label class="titleInput" style="left: 1rem;top: 0.3rem;font-size: 18px;">Clave de Internet de 6 dígitos</label>
                     </div>
                     <div class="consultarClaveNet">
                         <a href="#">No tengo Clave</a>
                         <a href="#">Olvidé mi clave</a>
                     </div>
                 </div>
+                
                 <!-- recapcha -->
                 <div>
                     <div class="validador">
-                        <input class="generadorNro" type="text">
+                        <input class="generadorNro" type="text" disabled>
                         <input class="validadorNro" type="number">
                     </div>
                     <input class="refreshGeneradorNro" type="button" value="Cambiar código">
@@ -72,7 +83,7 @@
                 <div class="confirmBotón"><button>Continuar</button></div>
             </form>
 
-            <div><p>Derechos recervados GerardoChipana</p></div>
+            <div style="display: flex;justify-content: center;margin-bottom: 15px;"><p>Derechos recervados GerardoChipana</p></div>
 
         </div>
     </div>

@@ -172,6 +172,9 @@ input:focus,select:focus{
     background: white;
     padding: 2px ;
 }
+.passwordNetTeclado{
+    display: none;
+}
 
 footer{
     display: flex;

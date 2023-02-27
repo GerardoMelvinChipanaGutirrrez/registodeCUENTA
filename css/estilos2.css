@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1,a,label,option,select{
+    color: #e6242e;
+    text-decoration: none;
+}
+.containerGestion{
+    display: flex;
+}
+.banner{
+    display: none;
+}
+.registroContainer{
+    display: flex;
+    background-color: #e6242e;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.bannerResponsible{
+    background-color: white;
+    width: 100%;
+}
+.bannerResponsible img{
+    height: 40px;
+    margin: 1%;
+}
+.return{
+    display: flex;
+    width: 100%;
+}
+.return a{
+    color: white;
+    margin: 10px;
+}
+.formuarioRegistro{
+    background-color: white;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+.formuarioRegistro h1{
+    margin: 20px auto;
+    font-size: 28px;
+}
+
+.tipoCuenta{
+    display: flex;
+}
+.tipoCuenta div label{
+    font-size: 20px;
+}
+.alineacionEtiquetas{
+    display: flex;
+    align-items: center;
+}
+.alineacionEtiquetas label{
+    margin: auto 8px;
+}
+.docIdentidadContainer{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin: 15px auto;
+}
+select,input{
+    padding: 5px;
+    font-size: 20px;
+    border: solid 1px #e6242e87;
+    margin: 10px auto;
+}
+input{
+    padding: 5px 8px;
+}
+.docIdentidadContainer select{
+    width: 40%;
+    height: 40px;
+    border-radius: 15px 0px 0px 15px;
+}
+.docIdentidadContainer input{
+    width: 80%;
+    height: 28px;
+    border-radius: 0px 15px 15px 0px;
+}
+.nCardContainer{
+    display: grid;
+    width: 80%;
+    margin: 10px auto;
+}
+.ingresoNroCard{
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+}
+.titleInput{
+    position: absolute;
+    background-color: white;
+}
+.passwordNet{
+    margin: 10px auto;
+}
+.ingresoPasswordNet{
+    width: 100%;
+    display: flex;
+}
+.ingresoPasswordNet input{
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+}
+.consultarClaveNet{
+    display: flex;
+    justify-content: space-between;
+}
+.validadorConteiner{
+    margin: 10px auto;
+    display: grid;
+}
+.validador{
+    display: flex;
+}
+.generadorNro{
+    width: 30%;
+    margin-right: 0px;
+    border-radius: 15px 0px 0px 15px;
+}
+.validadorNro{
+    width: 40%;
+    margin-left: 0px;
+    border-radius: 0px 15px 15px 0px;
+    height: 30px;
+}
+.refreshGeneradorNro{
+    background-color: white;
+    border: 0px;
+    color: #e6242e;
+    margin-top: 0px;
+    padding: 0px;
+}
+.confirmBotón{
+    width: 100%;
+}
+.confirmBotón button{
+    width: 100%;
+    color: white;
+    background-color: #e6242e;
+    border: 0px;
+    height: 50px;
+    font-size: 25px;
+}
+.footerMovil{
+    margin: 6px auto;
+    margin-bottom: 5px;
+    display: flex;
+    height: 50px;
+}
+.footDestok{
+    display: none;
+}
+.passwordNetTeclado{
+    display: none;
+}
+
+input:focus,select:focus{
+    border: solid 2px #e6242e;
+    outline: none;
+}
+
+.refreshGeneradorNro:hover{
+    border: 0px;
+}
+
+a:hover{
+    text-decoration: underline 4px #e6242e;
+}
+input[type=button]:hover{
+    border-bottom: solid 4px #e6242e;
+    cursor: pointer;
+}
+.confirmBotón button:hover{
+    background-color: #e64124ec;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+}

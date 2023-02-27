@@ -66,7 +66,29 @@
                 <div class="passwordNet">
                     <div class="ingresoPasswordNet" style="position: relative;">
                         <input type="number" required>
-                        <label class="titleInput" style="left: 1rem;top: 0.3rem;font-size: 18px;">Clave de Internet de 6 dígitos</label>
+                        <label class="titleInput" style="left: 1rem;top: 0.3rem;">Clave de Internet de 6 dígitos</label>
+                        <table class="passwordNetTeclado">
+                            <tr>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                            </tr>
+                            <tr>
+                                <th>C</th>
+                                <th>0</th>
+                                <th>deleter</th>
+                            </tr>
+                        </table>
                     </div>
                     <div class="consultarClaveNet">
                         <a href="#">No tengo Clave</a>
@@ -75,18 +97,23 @@
                 </div>
                 
                 <!-- recapcha -->
-                <div>
+                <div class="validadorConteiner">
                     <div class="validador">
                         <input class="generadorNro" type="text" disabled>
                         <input class="validadorNro" type="number">
                     </div>
                     <input class="refreshGeneradorNro" type="button" value="Cambiar código">
                 </div>
+                
+                <!-- pie_de_pagina -->
+                <footer class="footerMovil"><p>Derechos recervados GerardoChipana</p></footer>
+
                 <!-- envio -->
                 <div class="confirmBotón"><button>Continuar</button></div>
+                
             </form>
 
-            <footer><p>Derechos recervados GerardoChipana</p></footer>
+            <footer class="footDestok"><p>Derechos reservados</p></footer>
 
         </div>
     </div>

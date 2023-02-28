@@ -22,96 +22,94 @@
             <div class="return">
                 <a href="#">←Volver</a>
             </div>
+            <!-- contenedor de formulario -->
+            <div class="continerFormal">
+                <!-- formulario -->
+                <form class="formuarioRegistro" method="metodo" action="ubicacion">
+                    <h1>BANCA POR INTERNET</h1>
 
-            <!-- formulario -->
-            <form class="formuarioRegistro" method="metodo" action="ubicacion">
-                <h1>BANCA POR INTERNET</h1>
+                    <!-- tipo_de_cuenta -->
+                    <div class="tipoCuenta">
+                        <div class="alineacionEtiquetas">
+                            <input type="radio" id="personal" name="tipoCuenta">
+                            <label for="personal">Personal</label>
+                        </div>
+                        <div class="alineacionEtiquetas">
+                            <input type="radio" id="empresa" name="tipoCuenta">
+                            <label for="empresa">Empresa</label>
+                        </div>
+                    </div>
 
-                <!-- tipo_de_cuenta -->
-                <div class="tipoCuenta">
-                    <div class="alineacionEtiquetas">
-                        <input type="radio" id="personal" name="tipoCuenta">
-                        <label for="personal">Personal</label>
-                    </div>
-                    <div class="alineacionEtiquetas">
-                        <input type="radio" id="empresa" name="tipoCuenta">
-                        <label for="empresa">Empresa</label>
-                    </div>
-                </div>
+                    <!-- documento_de_identidad -->
+                    <div class="docIdentidadContainer">
 
-                <!-- documento_de_identidad -->
-                <div class="docIdentidadContainer">
+                        <select name="tipDocIdentidad" id="tipDocIdentidad">
+                            <option value="DNI">DNI</option>
+                            <option value="CE">CE</option>
+                            <option value="PAS">PAS</option>
+                        </select>
+                        <input type="number" id="docIdentidad" name="docIdentidad" placeholder="Nro de documento" required>
+                    </div>
+                    
+                    <!-- numero_de_tarjeta -->
+                    <div class="nCardContainer">
+                        <div style="position: relative;">
+                            <input class="ingresoNroCard" type="number" required>
+                            <label class="titleInput" style="left: 1rem;top: 0.2rem;">Número de tarjeta</label>
+                        </div>
+                        <div class="alineacionEtiquetas">
+                            <input style="margin: 5px 5px 15px 15px;" type="checkbox" id="recordarDatos">
+                            <label style="margin: 5px 20px 15px 0px;" class="recordarDatosLabel" for="recordarDatos">Recordar datos</label>
+                        </div>
+                    </div>
 
-                    <select name="tipDocIdentidad" id="tipDocIdentidad">
-                        <option value="DNI">DNI</option>
-                        <option value="CE">CE</option>
-                        <option value="PAS">PAS</option>
-                    </select>
-                    <input type="number" id="docIdentidad" name="docIdentidad" placeholder="Nro de documento" required>
-                </div>
-                
-                <!-- numero_de_tarjeta -->
-                <div class="nCardContainer">
-                    <div style="position: relative;">
-                        <input class="ingresoNroCard" type="number" required>
-                        <label class="titleInput" style="left: 1rem;top: 0.2rem;">Número de tarjeta</label>
-                    </div>
-                    <div class="alineacionEtiquetas">
-                        <input style="margin: 5px 5px 15px 15px;" type="checkbox" id="recordarDatos">
-                        <label style="margin: 5px 20px 15px 0px;" class="recordarDatosLabel" for="recordarDatos">Recordar datos</label>
-                    </div>
-                </div>
+                    <!-- clave_de_internet -->
+                    <div class="passwordNet">
+                        <div class="ingresoPasswordNet" style="position: relative;">
+                            <input type="number" required>
+                            <label class="titleInput" style="left: 1rem;top: 0.3rem;">Clave de Internet de 6 dígitos</label>
+                            
+                            <!-- area del teclado -->
 
-                <!-- clave_de_internet -->
-                <div class="passwordNet">
-                    <div class="ingresoPasswordNet" style="position: relative;">
-                        <input type="number" required>
-                        <label class="titleInput" style="left: 1rem;top: 0.3rem;">Clave de Internet de 6 dígitos</label>
-                        <table class="passwordNetTeclado">
-                            <tr>
-                                <th>7</th>
-                                <th>8</th>
-                                <th>9</th>
-                            </tr>
-                            <tr>
-                                <th>4</th>
-                                <th>5</th>
-                                <th>6</th>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                                <th>2</th>
-                                <th>3</th>
-                            </tr>
-                            <tr>
-                                <th>C</th>
-                                <th>0</th>
-                                <th>deleter</th>
-                            </tr>
-                        </table>
+                            <table class="passwordNetTeclado">
+                                <tr>
+                                    <th><button class="bottonAlt">7</button></th><th><button class="bottonAlt">8</button></th><th><button class="bottonAlt">9</button></th>
+                                </tr>
+                                <tr>
+                                    <th><button class="bottonAlt">4</button></th><th><button class="bottonAlt">5</button></th><th><button class="bottonAlt">6</button></th>
+                                </tr>
+                                <tr>
+                                    <th><button class="bottonAlt">1</button></th><th><button class="bottonAlt">2</button></th><th><button class="bottonAlt">3</button></th>
+                                </tr>
+                                <tr>
+                                    <th><button class="bottonAlt">c</button></th><th><button class="bottonAlt">0</button></th><th><button class="bottonEspecial">Deleter</button></th>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        <div class="consultarClaveNet">
+                            <a href="#">No tengo Clave</a>
+                            <a href="#">Olvidé mi clave</a>
+                        </div>
                     </div>
-                    <div class="consultarClaveNet">
-                        <a href="#">No tengo Clave</a>
-                        <a href="#">Olvidé mi clave</a>
+                    
+                    <!-- recapcha -->
+                    <div class="validadorConteiner">
+                        <div class="validador">
+                            <input class="generadorNro" type="text" disabled>
+                            <input class="validadorNro" type="number">
+                        </div>
+                        <input class="refreshGeneradorNro" type="button" value="Cambiar código">
                     </div>
-                </div>
-                
-                <!-- recapcha -->
-                <div class="validadorConteiner">
-                    <div class="validador">
-                        <input class="generadorNro" type="text" disabled>
-                        <input class="validadorNro" type="number">
-                    </div>
-                    <input class="refreshGeneradorNro" type="button" value="Cambiar código">
-                </div>
-                
-                <!-- pie_de_pagina -->
-                <footer class="footerMovil"><p>Derechos recervados GerardoChipana</p></footer>
+                    
+                    <!-- pie_de_pagina -->
+                    <footer class="footerMovil"><p>Derechos recervados GerardoChipana</p></footer>
 
-                <!-- envio -->
-                <div class="confirmBotón"><button>Continuar</button></div>
-                
-            </form>
+                    <!-- envio -->
+                    <div class="confirmBotón"><button>Continuar</button></div>
+                    
+                </form>
+            </div>
 
             <footer class="footDestok"><p>Derechos reservados</p></footer>
 

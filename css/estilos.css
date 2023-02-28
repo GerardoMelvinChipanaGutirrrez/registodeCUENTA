@@ -3,183 +3,208 @@
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-label,option,select{
-    color: #e6242e;
-    cursor: pointer;
-}
-a{
-    text-decoration: none;
-    color: #e6242e;
-}
-input,select{
-    border: solid 1px #e6242e87;
-    height: 34px;
-    padding: 7px;
-    font-size: 18px;
-}
-input:focus,select:focus{
-    border: solid 2px #e6242e;
-    outline: none;
-}
 
+h1,a,label,option,select{
+    color: #e6242e;
+    text-decoration: none;
+}
 .containerGestion{
     display: flex;
 }
 .banner{
-    padding: 240px 90px;
+    display: none;
 }
 .registroContainer{
+    display: flex;
     background-color: #e6242e;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
     width: 100%;
 }
+.bannerResponsible{
+    background-color: white;
+    width: 100%;
+}
+.bannerResponsible img{
+    height: 40px;
+    margin: 1%;
+}
 .return{
-    margin: 20px;
+    display: flex;
+    width: 100%;
 }
 .return a{
     color: white;
+    margin: 10px;
+    position: absolute;
+    font-size: 140%;
 }
-
-.bannerResponsible{
-    width: 100%;
-    background-color: white;
-    display: none;
-    height: 4%;
-    padding: 1px;
-}
-.bannerResponsible img{
-    height: 100%;
-    margin-left: 2%;
-}
-
 .formuarioRegistro{
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    flex-wrap: wrap;
-    margin: 10% auto;
     background-color: white;
-    width: 65%;
-    border-radius: 10px;
-    box-shadow:  2px 20px 20px #8b161cfa
+    width: 100%;
+    max-width: 412px;
+    display: grid;
+    justify-items: center;
+    margin:auto;
+    margin-top: 10%;
+    height: 60%;
 }
 .formuarioRegistro h1{
-    margin: 40px auto 15px auto;
-    color:#e6242e;
+    margin: 20px auto;
+    font-size: 28px;
 }
 
 .tipoCuenta{
     display: flex;
-    justify-content: flex-start;
-    width: 450px;
+}
+.tipoCuenta div label{
+    font-size: 20px;
 }
 .alineacionEtiquetas{
     display: flex;
     align-items: center;
 }
-.tipoCuenta div label{
-    margin: 20px 35px 20px 0px;
-    font-size: 20px;
+.alineacionEtiquetas label{
+    margin: auto 8px;
 }
-.tipoCuenta div input{
-    margin: 0px 10px;
-}
-
 .docIdentidadContainer{
-    width: 450px;
-    margin: 15px auto;
     display: flex;
     align-items: center;
+    width: 80%;
+    height: 50px;
+    margin: 15px auto;
+}
+select,input{
+    padding: 5px;
+    font-size: 20px;
+    border: solid 1px #e6242e87;
+    margin: 10px auto;
+}
+input{
+    padding: 5px 8px;
 }
 .docIdentidadContainer select{
-    width: 18%;
-    border-radius: 10px 0px 0px 10px;
-    height: 50px;
-    padding: 8px;
-    font-size: 18px;
+    width: 40%;
+    height: 40px;
+    border-radius: 15px 0px 0px 15px;
 }
 .docIdentidadContainer input{
     width: 80%;
-    margin: 15px 0px;
-    border-radius: 0px 10px 10px 0px;
-    height: 34px;
-    padding: 7px;
-    font-size: 18px;
+    height: 28px;
+    border-radius: 0px 15px 15px 0px;
 }
-
-.ingresoNroCard,.ingresoPasswordNet input{
-    width: 96%;
-    margin: 15px auto;
+.nCardContainer{
+    display: grid;
+    width: 80%;
+    margin: 10px auto;
+}
+.ingresoNroCard{
     border-radius: 10px;
+    width: 100%;
+    height: 40px;
 }
-.nCardContainer label{
-    margin: 0px auto 15px auto;
-    font-size: 20px;
+.titleInput{
+    position: absolute;
+    background-color: white;
+}
+.passwordNet{
+    margin: 10px auto;
+}
+.ingresoPasswordNet{
+    width: 100%;
     display: flex;
-    align-items: center;
 }
-.nCardContainer label input{
-    margin: 0px 10px;
+.ingresoPasswordNet input{
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
 }
 .consultarClaveNet{
-    margin: 0px auto 15px auto;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
-
+.validadorConteiner{
+    margin: 10px auto;
+    display: grid;
+}
 .validador{
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .generadorNro{
     width: 30%;
-    margin: 15px 0px;
-    border-radius: 10px 0px 0px 10px;
-    margin-bottom: 0px;
+    margin-right: 0px;
+    border-radius: 15px 0px 0px 15px;
 }
 .validadorNro{
-    width: 55%;
-    margin: 15px 0px ;
-    border-radius: 0px 10px 10px 0px;
-    margin-bottom: 0px;
+    width: 40%;
+    margin-left: 0px;
+    border-radius: 0px 15px 15px 0px;
+    height: 30px;
 }
 .refreshGeneradorNro{
-    margin-left: 21px;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    width: 32%;
-    color: #e6242e;
+    background-color: white;
     border: 0px;
-    background: none;
+    color: #e6242e;
+    margin-top: 0px;
+    padding: 0px;
 }
-
 .confirmBotón{
-    display: flex;
+    width: 100%;
 }
 .confirmBotón button{
-    width: 65%;
-    margin: 35px auto;
-    height: 50px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #e6242e;
+    width: 100%;
     color: white;
+    background-color: #e6242e;
     border: 0px;
-    font-size: 18px;
+    height: 50px;
+    font-size: 25px;
 }
-
-.titleInput{
-    position: absolute;
-    background: white;
-    padding: 2px ;
+.footerMovil{
+    margin: 6px auto;
+    margin-bottom: 5px;
+    display: flex;
+    height: 50px;
 }
-.passwordNetTeclado{
+.footDestok{
     display: none;
 }
-
-footer{
+.passwordNetTeclado{
     display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: #e6242e;
     justify-content: center;
-    margin-bottom: 15px;
+    top: 63px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 3px 20px -12px;
+}
+.passwordNetTeclado tr th button{
+    border: solid 3px white;
+    color: white;
+    width: 80%;
+    margin: 5px;
+    background-color: #e6242e;
+    border-radius: 10px;
+}
+.bottonAlt{
+    padding: 10px 50px;
+}
+.bottonEspecial{
+    padding: 10px;
+}
+
+.ingresoPasswordNet input:focus{
+    border-radius: 10px 10px 0px 0px;
+}
+
+input:focus,select:focus{
+    border: solid 2px #e6242e;
+    outline: none;
+}
+
+.refreshGeneradorNro:hover{
+    border: 0px;
 }
 
 a:hover{
@@ -203,32 +228,62 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-@media (max-width:732px){
+
+@media(min-width:390px){
     .formuarioRegistro{
-        width: 90%;
-    }
-    .return{
-        display: none;
-    }
-    .registroContainer{
-        display: flex;
-        flex-direction:column;
-    }
-    footer{
-        color: rgb(212, 212, 212);
+        margin: 30% auto;  
     }
 }
-
-@media (max-width:1115px){
-    .banner{
-        display: none;
-        position: absolute;
+@media(min-width:405px){
+    .return a{
+        position: relative;}
+}
+@media(min-width:700px){
+    img{
+        height: 100px;
     }
-    .return{
-        display: none;
+    .formuarioRegistro{
+        max-width: 100%;
+        margin: 0px;
+        height: 50%;
+    }
+    .continerFormal{
+        padding: 15%;
+    }
+}
+@media(min-width:1000px){
+    .banner{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+
     }
     .bannerResponsible{
-        display: flex;
+        display: none;
     }
-
+    .continerFormal{
+        padding: 5%;
+    }
+    .formuarioRegistro{
+        box-shadow: 5px 5px 20px #8d1e24;
+        border-radius: 5px;
+    }
+    .confirmBotón{
+        display: flex;
+        justify-content: center;
+    }
+    .confirmBotón button{
+        width: 50%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .passwordNet{
+        width: 80%;
+    }
+    .nCardContainer{
+        width: 80%;
+    }
+    .footerMovil{display: none;}
+    .footDestok{display: flex;}
 }
